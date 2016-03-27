@@ -4,7 +4,7 @@ public class Stack_Linked<T>{
 	private Node first;
 	private int size;
 	
-	private class Node<T>{
+	private class Node{
 		T t;
 		Node next;
 	}
@@ -26,7 +26,7 @@ public class Stack_Linked<T>{
 	}
 	
 	public T pop(){
-		T t = (T) first.t;
+		T t = first.t;
 		first = first.next;
 		size--;
 		return t;
