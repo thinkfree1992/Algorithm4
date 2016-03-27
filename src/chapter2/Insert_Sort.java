@@ -24,7 +24,7 @@ public class Insert_Sort {
 //		}
 		int[] a = {12,11,43,5,3,34,26,23,455,23,424,242,243,23,34,455,33,34,43,54,8,10,15,13};
 		double start = System.currentTimeMillis();
-		sort(a);
+		//sort(a);
 		show(a);
 		System.out.println();
 		System.out.println(System.currentTimeMillis() - start);

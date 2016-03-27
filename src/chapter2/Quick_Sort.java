@@ -25,32 +25,32 @@ public class Quick_Sort {
 		return i+1;
 	}
 	
-	private int partition(int[] input, int lowIndex, int highIndex) {  
-		   
-	      int i=lowIndex;  
-	      int pivotIndex=lowIndex;  
-	      int j=highIndex+1;  
-	   
-	      while (true){  
-	   
-	          while (less(input[++i], input[pivotIndex])){  
-	              if (i==highIndex) break;  
-	          }  
-	   
-	          while (less (input[pivotIndex], input[--j])){  
-	              if (j==lowIndex) break;  
-	          }  
-	   
-	          if (i>=j) break;  
-	   
-	          exchange(input, i, j);  
-	   
-	      }  
-	   
-	      exchange(input, pivotIndex, j);  
-	   
-	      return j;  
-	  }  
+//	private int partition(int[] input, int lowIndex, int highIndex) {  
+//		   
+//	      int i=lowIndex;  
+//	      int pivotIndex=lowIndex;  
+//	      int j=highIndex+1;  
+//	   
+//	      while (true){  
+//	   
+//	          while (less(input[++i], input[pivotIndex])){  
+//	              if (i==highIndex) break;  
+//	          }  
+//	   
+//	          while (less (input[pivotIndex], input[--j])){  
+//	              if (j==lowIndex) break;  
+//	          }  
+//	   
+//	          if (i>=j) break;  
+//	   
+//	          exchange(input, i, j);  
+//	   
+//	      }  
+//	   
+//	      exchange(input, pivotIndex, j);  
+//	   
+//	      return j;  
+//	  }  
 	
 	public static void exchange(int[] arr, int min, int max){
 		int temp = arr[max];
