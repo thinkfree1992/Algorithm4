@@ -58,13 +58,16 @@ public class Stack<T> implements Iterable<T>{
 	}
 	 
 	 public static void main(String[] args){
-		 Stack<String> stack = new Stack(5);
+		 Stack<String> stack = new Stack<String>(5);
 		 stack.push("sf");
 		 stack.push("ab");
 		 stack.pop();
-		 Iterator i = stack.iterator();
-		 while(i.hasNext()){
-			 System.out.println(i.next());
+//		 Iterator<String> i = stack.iterator();
+//		 while(i.hasNext()){
+//			 System.out.println(i.next());
+//		 }
+		 for(String s : stack){
+			 System.out.println(s);
 		 }
 	 }
 }
