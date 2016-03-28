@@ -15,7 +15,7 @@ public class Queue_Linked<T> {
 		Node oldtail = tail;
 		tail = new Node();
 		tail.t = t;
-		//tail.front = oldtail;
+		tail.front = oldtail;
 		tail.later = null;
 		size++;
 		if(size == 1)
