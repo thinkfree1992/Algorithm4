@@ -46,6 +46,8 @@ public class Oder_Array_Priority_Queues<T extends Comparable<T>> {
 		oapq.insert(1);
 		oapq.insert(2);
 		oapq.insert(3);
+		oapq.insert(4);
+		oapq.insert(5);
 		System.out.println(oapq.delMax());
 		System.out.println(oapq.max());
 	}
