@@ -94,7 +94,7 @@ public class Linked_Priority_Queues<T extends Comparable<T>> implements Iterable
 	
 	private class ListIterator implements Iterator<T>{
 		public boolean hasNext() {
-			return size > 0;
+			return tail != null;
 		}
 		
 		public T next() {
